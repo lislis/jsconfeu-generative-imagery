@@ -1,22 +1,57 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 1em 3em;
   background-color: lightgrey;
+  color: #303F62;
+}
+
+a {
+  color: #303F62
 }
 
 canvas {
-  border: 1px solid darkgrey;
   display: block;
   margin: auto;
+  max-width: 100%;
   background-color: white;
+  border: 1px solid darkgrey;
 }
 
 nav ul {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   padding: 0;
   list-style: none;
 }
 
+nav li:first-of-type {
+  flex-grow: 2;
+}
+
 nav li {
   margin-right: 2em;
+}
+
+main ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main ul li {
+  flex: 1 0 200px;
+  padding: .5em;
+}
+
+main li a:hover img,
+main li a:active img {
+  border-color: #303F62;
+}
+
+main img {
+  width: 100%;
+  height: auto;
+  border: 5px solid darkgrey;
 }

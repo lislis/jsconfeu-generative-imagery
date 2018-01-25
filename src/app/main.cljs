@@ -4,7 +4,7 @@
             [app.mover :as mover]))
 
 (def width 1914) ; 1914
-(def height 1074) ; 1074
+(def height 800) ; 1074
 
 (def pink "#E10079")
 (def blue "#5f57c4")
