@@ -13,5 +13,5 @@
         :devtools {:http-root "public"
                    :http-port 4001
                    :before-load app.main/stop
-                   :after-load app.main/start
+;                   :after-load app.main/start
                    :watch-dir "public"}}}}
