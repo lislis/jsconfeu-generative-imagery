@@ -62,7 +62,7 @@
 (defn seed-bounceball [num w h]
   (for [i (range num)]
     (let [x (js/random 20 (- w 20))
-          y 30
+          y (js/randomGaussian (/ h 2) 400)
           topspeed 3
           mass (js/randomGaussian 4 1.5)
           m (create x y 0 0 0 0 topspeed)]
